@@ -145,6 +145,6 @@ class Main extends PluginBase implements Listener{
         }
 
         public function onDisable() : void{
-            $this->getLogger()->info("SEXDCore Shutdown Completed!");
+            $this->getLogger()->info("Sudo Plugin Shutdown Completed!");
         }
     }
