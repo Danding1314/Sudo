@@ -1,0 +1,15 @@
+name: Sudo
+main: Sudo\Main
+description: 操控玩家
+version: 1.0.0
+api: 3.0.0
+load: POSTWORLD
+author: sdsd16
+commands:
+  sudo:
+    description: 操控玩家
+    permission: sexd.sudo
+permissions:
+  sexd.sudo:
+    description: 
+    default: true
