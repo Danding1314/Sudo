@@ -133,7 +133,8 @@ class Main extends PluginBase implements Listener{
                 $sender->sendMessage("§e操控系統 §b>　§d請輸入玩家ID 和 指令");
                 return true;
             }
-            $player = $this->getServer()->getPlayer(array_shift($args));
+	    array_shift($args);
+            $player = $this->getServer()->getPlayer($args);
             if ($player instanceof Player) {
                 $this->getServer()->dispatchCommand($player, trim(implode(" ", $args)));
                 return true;
